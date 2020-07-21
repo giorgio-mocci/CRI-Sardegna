@@ -61,7 +61,17 @@ hr{
   right: 13%;
   top: 4%;
 }
+.rec-link:hover{
+  color: #ff4949;
+  }
+.rec-link{
+  text-decoration: none;
+  color: #c10000;
+}
 .info-link:hover{
+  color: #ff4949;
+}
+.reg-link:hover{
   color: #ff4949;
 }
 .input{
@@ -78,4 +88,5 @@ hr{
 }
 .form{
   width: 50%;
+  float:left;
 }
