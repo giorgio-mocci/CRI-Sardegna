@@ -5,6 +5,14 @@ body{
 h4{
   margin-top: 0;
 }
+hr{
+  border-style: none;
+  border-width: 5px;
+  border-top-style: dotted;
+  width: 10%;
+  border-color: #c10000;
+  margin: 5% auto 5% auto;
+}
 .topper{
   background-color: white;
   padding-bottom: 1%;
@@ -44,7 +52,14 @@ h4{
   position: absolute;
   right: 1%;
   top: 4%;
-
+}
+.reg-link{
+  float: right;
+  color: #c10000;
+  margin-right:  4%;
+  position: absolute;
+  right: 13%;
+  top: 4%;
 }
 .info-link:hover{
   color: #ff4949;
@@ -52,4 +67,15 @@ h4{
 .input{
   display: block;
   margin-left: 15%;
+  margin-bottom: 4%;
+  margin-top: 5%;
+  width: 50%;
+  position: relative;
+  left: 20%;
+}
+.titolo{
+  margin-left: 43%;
+}
+.form{
+  width: 50%;
 }
