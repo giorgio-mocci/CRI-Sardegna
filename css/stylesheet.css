@@ -1,0 +1,55 @@
+body{
+  background-color: #EEEEEE;
+  font-family: 'Lato', sans-serif;
+}
+h4{
+  margin-top: 0;
+}
+.topper{
+  background-color: white;
+  padding-bottom: 1%;
+  height: 9vh
+}
+.central{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  left: 25%;
+  top: 25%;
+  background-color: #dedede;
+}
+
+.logo{
+  height:    10vh;
+  float: left;
+}
+.sottotitolo{
+  height: 8vh;
+  width: 40%;
+}
+.title{
+  margin-bottom: 0;
+  padding-top: 2%;
+  color: #c10000;
+}
+.subt{
+  color: #c10000;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.info-link{
+  float: right;
+  color: #c10000;
+  margin-right:  4%;
+  position: absolute;
+  right: 1%;
+  top: 4%;
+
+}
+.info-link:hover{
+  color: #ff4949;
+}
+.input{
+  display: block;
+  margin-left: 15%;
+}
