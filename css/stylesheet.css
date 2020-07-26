@@ -5,14 +5,6 @@ body{
 h1,h2,h3,h4,h5,h6{
   font-weight: bold;
 }
-hr{
-  border-style: none;
-  border-width: 5px;
-  border-top-style: dotted;
-  width: 10%;
-  border-color: #fd2e2e;
-  margin: 5% auto 5% auto;
-}
 
 /*topper*/
 .topper-sub{
@@ -23,16 +15,16 @@ hr{
 }
 .topper .container-fluid{
   padding: 0;
+  background-color: white;
 }
-
 .navbar-brand {
   font-family: "Ubuntu";
   color: #fd2e2e;
   font-size: 1.5rem;
   font-weight: bold;
   padding-left: 40px;
+  text-align: center;
 }
-
 .nav-item {
   padding: 0 18px;
 }
@@ -45,13 +37,18 @@ hr{
   font-family: "Montserrant";
   font-weight: bold;
 }
+.nav-link:hover{
+  color: #fc6e5e;
+}
 
 /*central */
 .central{
   text-align: center;
+  margin-top: 7%;
 }
-.central-col{
-  background-color: red;
+.box-ombreggiato{
+  padding: 0;
+  box-shadow: 1px 2px 4px black;
 }
 .bottom-div{
   background-color: white;
