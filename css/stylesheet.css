@@ -1,13 +1,17 @@
 body{
-  background-color: #EEEEEE;
-  font-family: 'Lato', sans-serif;
+  background-color: #ab1212;
+  font-family: 'Montserrat', sans-serif;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5{
   font-weight: bold;
+}
+p{
+  font-weight: 400;
 }
 
 /*topper*/
 .topper-sub{
+  font-family: "Montserrat";
   font-weight: normal;
   font-size: 1.2rem;
   position: relative;
@@ -22,52 +26,85 @@ h1,h2,h3,h4,h5,h6{
   color: #fd2e2e;
   font-size: 1.5rem;
   font-weight: bold;
-  padding-left: 40px;
+  padding-left: 20px;
   text-align: center;
 }
 .nav-item {
   padding: 0 18px;
 }
 .logo{
-  width: 90px;
+  width: 80px;
 }
 .nav-link {
+  font-family: "Ubuntu";
   font-size: 1.2rem;
+  font-weight: 400;
   color: #fd2e2e;
-  font-family: "Montserrant";
-  font-weight: bold;
 }
 .nav-link:hover{
   color: #fc6e5e;
 }
 
+@media (max-width: 498px) {
+.logo{
+  margin-left: 40%;
+  margin-bottom: 5%;
+}
+.disclaimer{
+  font-size: 3.5vw;
+}
+.navbar-brand{
+  padding-left: 0;
+}
+}
+@media (max-width: 398px){
+  .navbar-brand{
+    font-size: 1rem;
+    margin: 0 auto 0 auto;
+  }
+  .panino{
+    margin-left: 40%;
+  }
+  .collapsed-panino{
+    margin-left: 30%;
+  }
+  .topper-sub{
+    font-size: 1rem;
+  }
+  .nav-link{
+    font-size: 1rem;
+  }
+}
+
 /*central */
 .central{
   text-align: center;
-  margin-top: 7%;
+  padding: 7% 5% 126px 5%;
+  width: 100%;
+  background-color: #EEEEEE;
 }
 .box-ombreggiato{
   padding: 0;
-  box-shadow: 1px 2px 4px black;
-}
-.bottom-div{
-  background-color: white;
-  width: 99%;
-  height: 12%;
-  position: absolute;
-  bottom: 0;
-}
-.input{
-  display: block;
-  margin-left: 15%;
-  margin-bottom: 4%;
-  margin-top: 5%;
-  width: 50%;
-  position: relative;
-  left: 20%;
+  box-shadow: 1px 2px 4px #ab1212;
 }
 
-.form{
+.bottone{
+  background-color: #fd2e2e;
+}
+.log-title{
+  font-family: "Ubuntu";
+}
+
+/*bottom*/
+.bottom-div{
+  background-color: #ab1212;
+  color: white;
+  text-align: center;
+}
+.disclaimer{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin:0 auto 0 auto;
   width: 50%;
-  float:left;
+  line-height: 1.5;
 }
