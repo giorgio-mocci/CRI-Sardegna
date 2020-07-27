@@ -2,67 +2,60 @@ body{
   background-color: #EEEEEE;
   font-family: 'Lato', sans-serif;
 }
-h4{
-  margin-top: 0;
-}
-hr{
-  border-style: none;
-  border-width: 5px;
-  border-top-style: dotted;
-  width: 10%;
-  border-color: #c10000;
-  margin: 5% auto 5% auto;
-}
-.topper{
-  background-color: white;
-  padding-bottom: 1%;
-  height: 9vh
-}
-.central{
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  left: 25%;
-  top: 25%;
-  background-color: #dedede;
+h1,h2,h3,h4,h5,h6{
+  font-weight: bold;
 }
 
+/*topper*/
+.topper-sub{
+  font-weight: normal;
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 5px;
+}
+.topper .container-fluid{
+  padding: 0;
+  background-color: white;
+}
+.navbar-brand {
+  font-family: "Ubuntu";
+  color: #fd2e2e;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 40px;
+  text-align: center;
+}
+.nav-item {
+  padding: 0 18px;
+}
 .logo{
-  height:    10vh;
-  float: left;
+  width: 90px;
 }
-.sottotitolo{
-  height: 8vh;
-  width: 40%;
+.nav-link {
+  font-size: 1.2rem;
+  color: #fd2e2e;
+  font-family: "Montserrant";
+  font-weight: bold;
 }
-.title{
-  margin-bottom: 0;
-  padding-top: 2%;
-  color: #c10000;
+.nav-link:hover{
+  color: #fc6e5e;
 }
-.subt{
-  color: #c10000;
-  margin-top: 0;
-  margin-bottom: 0;
+
+/*central */
+.central{
+  text-align: center;
+  margin-top: 7%;
 }
-.info-link{
-  float: right;
-  color: #c10000;
-  margin-right:  4%;
+.box-ombreggiato{
+  padding: 0;
+  box-shadow: 1px 2px 4px black;
+}
+.bottom-div{
+  background-color: white;
+  width: 99%;
+  height: 12%;
   position: absolute;
-  right: 1%;
-  top: 4%;
-}
-.reg-link{
-  float: right;
-  color: #c10000;
-  margin-right:  4%;
-  position: absolute;
-  right: 13%;
-  top: 4%;
-}
-.info-link:hover{
-  color: #ff4949;
+  bottom: 0;
 }
 .input{
   display: block;
@@ -73,9 +66,8 @@ hr{
   position: relative;
   left: 20%;
 }
-.titolo{
-  margin-left: 43%;
-}
+
 .form{
   width: 50%;
+  float:left;
 }
