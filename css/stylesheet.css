@@ -1,73 +1,124 @@
 body{
-  background-color: #EEEEEE;
-  font-family: 'Lato', sans-serif;
+  background-color: #ab1212;
+  font-family: 'Montserrat', sans-serif;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,h2,h3,h4,h5{
+  font-family: "Ubuntu";
   font-weight: bold;
 }
 
+p{
+  font-weight: 400;
+}
+
 /*topper*/
-.topper-sub{
+
+#topper .container-fluid{
+  padding: 0;
+  background-color: white;
+}
+
+.navbar-brand {
+  color: #fd2e2e;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.topper-sottotitolo{
+  font-family: "Montserrat";
   font-weight: normal;
   font-size: 1.2rem;
   position: relative;
   bottom: 5px;
 }
-.topper .container-fluid{
-  padding: 0;
-  background-color: white;
+
+.logo{
+  width: 80px;
 }
-.navbar-brand {
-  font-family: "Ubuntu";
-  color: #fd2e2e;
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding-left: 40px;
-  text-align: center;
-}
+
 .nav-item {
   padding: 0 18px;
 }
-.logo{
-  width: 90px;
-}
+
 .nav-link {
+  font-family: "Ubuntu";
   font-size: 1.2rem;
+  font-weight: 400;
   color: #fd2e2e;
-  font-family: "Montserrant";
-  font-weight: bold;
 }
 .nav-link:hover{
   color: #fc6e5e;
 }
 
-/*central */
-.central{
+/*bottom*/
+
+#bottom{
+  color: white;
   text-align: center;
-  margin-top: 7%;
-}
-.box-ombreggiato{
-  padding: 0;
-  box-shadow: 1px 2px 4px black;
-}
-.bottom-div{
-  background-color: white;
-  width: 99%;
-  height: 12%;
-  position: absolute;
-  bottom: 0;
-}
-.input{
-  display: block;
-  margin-left: 15%;
-  margin-bottom: 4%;
-  margin-top: 5%;
-  width: 50%;
-  position: relative;
-  left: 20%;
 }
 
-.form{
+.disclaimer{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin:0 auto 0 auto;
   width: 50%;
-  float:left;
+  line-height: 1.5;
+}
+
+/*adattabilità topper e bottom*/
+
+@media (max-width: 498px) {
+  .logo{
+  margin-left: 40%;
+  margin-bottom: 5%;
+  }
+  .disclaimer{
+  font-size: 3.5vw;
+  }
+  .navbar-brand{
+  padding-left: 0;
+  }
+}
+@media (max-width: 398px){
+  .navbar-brand{
+    font-size: 1rem;
+    margin: 0 auto 0 auto;
+  }
+  .panino{
+    margin-left: 40%;
+  }
+  .collapsed-panino{
+    margin-left: 30%;
+  }
+  .topper-sottotitolo{
+    font-size: 0.8rem;
+  }
+  .nav-link{
+    font-size: 1rem;
+  }
+}
+
+/*central */
+#central{
+  width: 100%;
+  background-color: #EEEEEE;
+}
+
+
+/*login central*/
+.riquadro-login{
+    padding: 7% 8% 9.8% 8%;
+}
+
+.form-options{
+  text-align: center;
+  padding: 0;
+  box-shadow: 1px 2px 4px #ab1212;
+}
+
+.bottone-login{
+  background-color: #fd2e2e;
 }
