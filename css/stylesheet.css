@@ -2,10 +2,12 @@ body{
   background-color: #ab1212;
   font-family: 'Montserrat', sans-serif;
 }
+
 h1,h2,h3,h4,h5{
   font-family: "Ubuntu";
   font-weight: bold;
 }
+
 p{
   font-weight: 400;
 }
@@ -101,13 +103,16 @@ p{
 
 /*central */
 #central{
-  padding: 7% 8% 9.8% 8%;
   width: 100%;
   background-color: #EEEEEE;
 }
 
 
 /*login central*/
+.riquadro-login{
+    padding: 7% 8% 9.8% 8%;
+}
+
 .form-options{
   text-align: center;
   padding: 0;
