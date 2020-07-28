@@ -3,6 +3,7 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 h1,h2,h3,h4,h5{
+  font-family: "Ubuntu";
   font-weight: bold;
 }
 p{
@@ -10,31 +11,36 @@ p{
 }
 
 /*topper*/
-.topper-sub{
-  font-family: "Montserrat";
-  font-weight: normal;
-  font-size: 1.2rem;
-  position: relative;
-  bottom: 5px;
-}
-.topper .container-fluid{
+
+#topper .container-fluid{
   padding: 0;
   background-color: white;
 }
+
 .navbar-brand {
-  font-family: "Ubuntu";
   color: #fd2e2e;
   font-size: 1.5rem;
   font-weight: bold;
   padding-left: 20px;
   text-align: center;
 }
-.nav-item {
-  padding: 0 18px;
+
+.topper-sottotitolo{
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 5px;
 }
+
 .logo{
   width: 80px;
 }
+
+.nav-item {
+  padding: 0 18px;
+}
+
 .nav-link {
   font-family: "Ubuntu";
   font-size: 1.2rem;
@@ -45,17 +51,34 @@ p{
   color: #fc6e5e;
 }
 
+/*bottom*/
+
+#bottom{
+  color: white;
+  text-align: center;
+}
+
+.disclaimer{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin:0 auto 0 auto;
+  width: 50%;
+  line-height: 1.5;
+}
+
+/*adattabilità topper e bottom*/
+
 @media (max-width: 498px) {
-.logo{
+  .logo{
   margin-left: 40%;
   margin-bottom: 5%;
-}
-.disclaimer{
+  }
+  .disclaimer{
   font-size: 3.5vw;
-}
-.navbar-brand{
+  }
+  .navbar-brand{
   padding-left: 0;
-}
+  }
 }
 @media (max-width: 398px){
   .navbar-brand{
@@ -68,8 +91,8 @@ p{
   .collapsed-panino{
     margin-left: 30%;
   }
-  .topper-sub{
-    font-size: 1rem;
+  .topper-sottotitolo{
+    font-size: 0.8rem;
   }
   .nav-link{
     font-size: 1rem;
@@ -77,34 +100,20 @@ p{
 }
 
 /*central */
-.central{
-  text-align: center;
-  padding: 7% 5% 126px 5%;
+#central{
+  padding: 7% 8% 9.8% 8%;
   width: 100%;
   background-color: #EEEEEE;
 }
-.box-ombreggiato{
+
+
+/*login central*/
+.form-options{
+  text-align: center;
   padding: 0;
   box-shadow: 1px 2px 4px #ab1212;
 }
 
-.bottone{
+.bottone-login{
   background-color: #fd2e2e;
-}
-.log-title{
-  font-family: "Ubuntu";
-}
-
-/*bottom*/
-.bottom-div{
-  background-color: #ab1212;
-  color: white;
-  text-align: center;
-}
-.disclaimer{
-  padding-top: 1%;
-  padding-bottom: 1%;
-  margin:0 auto 0 auto;
-  width: 50%;
-  line-height: 1.5;
 }

@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>CRIS accedi</title>
+  <!-- bootstrap e mio css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/stylesheet.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- font importati -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-  <!-- ho preso 3 font da google font per titolo, sottotitolo e testo normale, se non ti piacciono cambiali-->
   <link rel="icon" href="img/logo.png">
-  <!-- #TODO aggiungere favicon, usare la croce centrale tagliata dal logo della croce rossa con sfondo trasparente-->
+  <!-- import delle icone tipo chiave, lucchetto...-->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <!-- Bootstrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -20,11 +20,12 @@
 
 <body>
 
-  <div class="topper">
+  <div id="topper">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg ">
         <img class="logo" src="img/logo.png" alt="cri-logo">
-        <h3 class="navbar-brand">Croce Rossa italiana <br> <span class="topper-sub">comitato regionale Sardegna</span></h3>
+        <h3 class="navbar-brand">Croce Rossa italiana <br> <span class="topper-sottotitolo">comitato regionale Sardegna</span></h3>
+        <!-- gestione menu hamburger quando pagina viene ristretta -->
         <button class="navbar-toggler navbar-light panino" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,18 +39,21 @@
             </li>
           </ul>
         </div>
+        <!-- fine gestione hamburger -->
       </nav>
     </div>
   </div>
 
 
-  <div class="central">
+  <div id="central">
     <div class="row">
-      <div class="col-md-8 offset-md-2 central-col box-ombreggiato">
+      <!-- gestione riquadro che contiene il form -->
+      <div class="col-md-8 offset-md-2 central-col form-options">
         <div class="card">
           <div class="card-body">
-            <h2 class="log-title"><i class="fas fa-key"></i> Login</h2>
+            <h2><i class="fas fa-key"></i> Login</h2>
             <div class="row">
+              <!-- gesitone parte sinistra del form -->
               <div class="col-md-6">
                 <form class="" action="index.html" method="post">
                   <h6>Indirizzo email</h6>
@@ -64,25 +68,30 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fas fa-lock"></i></span>
                     </div>
-                    <input type="password" class="form-control"aria-label="Password">
+                    <input type="password" class="form-control" aria-label="Password">
                   </div>
-                  <button class="btn btn-md btn-block btn-danger bottone" type="button"><i class="fas fa-sign-in-alt"></i> Accedi</button>
+                  <button class="btn btn-md btn-block btn-danger bottone-login" type="button"><i class="fas fa-sign-in-alt"></i> Accedi</button>
                 </form>
               </div>
+              <!-- fine gestione parte sinistra -->
+              <!-- gestione parte destra del form -->
               <div class="col-md-6">
                 <hr>
                 <p>Inserisci l'email e la password fornite alla registrazione.</p>
                 <p>Hai dimenticato le credenziali? Recuperale <a href="#">qui.</a></p>
                 <hr>
-
               </div>
+              <!-- fine gestione parte destra -->
             </div>
           </div>
         </div>
       </div>
+      <!-- fine gestione riquadro contenente il form -->
     </div>
   </div>
-  <div class="bottom-div">
+
+
+  <div id="bottom">
     <div class="container-fluid">
       <p class="disclaimer">Sito riservato esclusivamente a uso degli operatori di Croce Rossa della regione Sardegna</p>
     </div>
