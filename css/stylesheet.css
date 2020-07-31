@@ -55,7 +55,7 @@ p{
 
 /*bottom*/
 
-#bottom{
+#bottom{https://drive.google.com/uc?export=download&id=1GT2nLIp32IwMmqKgX0jYOylAmHLPE7iQ
   color: white;
   text-align: center;
 }
@@ -111,6 +111,7 @@ p{
 /*login central*/
 .riquadro-login{
     padding: 7% 8% 9.8% 8%;
+    margin: 0;
 }
 
 .form-options{
