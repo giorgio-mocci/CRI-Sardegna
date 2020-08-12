@@ -14,9 +14,14 @@ p{
 
 /*topper*/
 
-#topper .container-fluid{
+#topper {
   padding: 0;
   background-color: white;
+}
+
+#bottom .container-fluid{
+  padding: 0;
+
 }
 
 .navbar-brand {
@@ -55,9 +60,11 @@ p{
 
 /*bottom*/
 
-#bottom{https://drive.google.com/uc?export=download&id=1GT2nLIp32IwMmqKgX0jYOylAmHLPE7iQ
+#bottom{
   color: white;
   text-align: center;
+  display:block;
+
 }
 
 .disclaimer{
@@ -76,7 +83,7 @@ p{
   margin-bottom: 5%;
   }
   .disclaimer{
-  font-size: 3.5vw;
+  font-size: 10vw;
   }
   .navbar-brand{
   padding-left: 0;
@@ -105,11 +112,18 @@ p{
 #central{
   width: 100%;
   background-color: #EEEEEE;
+  padding : 0%;
+
 }
 
 
 /*login central*/
 .riquadro-login{
+    padding: 7% 8% 9.8% 8%;
+    margin: 0;
+}
+
+.Intro-Homepage{
     padding: 7% 8% 9.8% 8%;
     margin: 0;
 }
@@ -122,4 +136,45 @@ p{
 
 .bottone-login{
   background-color: #fd2e2e;
+}
+
+.Primo-rettangolo{
+  margin: 10px;
+  background-color: #EEEEEE;
+  padding: 5% 5% 5% 5%;
+  color : white;
+  text-align: center;
+  background-image: url("https://datafiles.gaia.cri.it/assets/img/croce_mani.jpg");/* una volta caricata online, useremo delle immagini scaricate, in modo che non possano andare down etc */
+  margin-top: 0px;
+  margin-left: -0px;
+  margin-right: -0px;
+  padding-top:300px;
+  padding-bottom:300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+.Titolo-Paragrafo{
+  color : red;
+}
+
+.Post-rettangolo{
+  background-color:#EEEEEE;
+  padding : 0%;
+}
+
+.Left-part{
+  padding: 2% 5% 5% 5%;
+  color : black;
+}
+
+.col{
+  margin right: : 1000px;
+}
+
+.Right-part{
+    color : red;
+    padding: 2% 5% 5% 5%;
+    margin-left: 50px;
 }
