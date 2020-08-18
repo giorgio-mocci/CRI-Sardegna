@@ -1,11 +1,12 @@
-body{
+html, body{
   background-color: #EEEEEE;
   font-family: 'Montserrat', sans-serif;
-  width: 100%;
+
+    width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+
+
+    overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5{
@@ -22,6 +23,8 @@ p{
 #topper {
   padding: 0;
   background-color: white;
+  clear:both;
+  position: relative;
 }
 
 #bottom .container-fluid{
@@ -47,6 +50,12 @@ p{
 
 .logo{
   width: 80px;
+}
+
+
+
+.col{
+  width: 33.33%;
 }
 
 .nav-item {
@@ -82,6 +91,9 @@ p{
    text-align: center;
    color: white;
    display:block;
+   clear:both;
+
+
 
 
 }
@@ -131,15 +143,25 @@ p{
 #central{
   width: 100%;
   background-color: #EEEEEE;
-  padding : 0%;
+
+
+
 
 }
 
 
 /*login central*/
 .riquadro-login{
-    padding: 7% 8% 9.8% 8%;
-    margin: 0;
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+
+
+
+
 }
 
 .Intro-Homepage{
@@ -176,6 +198,8 @@ p{
 }
 .Titolo-Paragrafo{
   color : red;
+  text-align: center;
+
 }
 
 .Post-rettangolo{
@@ -196,4 +220,28 @@ p{
     color : red;
     padding: 2% 5% 5% 5%;
     margin-left: 50px;
+}
+
+.Form-SignUP{
+  text-align: left;
+  padding: 1%;
+  position: relative;
+    min-height: calc(100vh - 122px - 66.84px);
+
+}
+
+.inputForm {
+  width : 100%;
+  text-align: Left;
+    font-weight:400;
+}
+.Comitati{
+  text-align: center;
+}
+
+
+
+.SUBMIT,submit{
+  text-align: right;
+  color: red;
 }
