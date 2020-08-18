@@ -153,19 +153,17 @@ p{
 /*login central*/
 .riquadro-login{
     position: relative;
-    top: 40%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-
-
-
+  padding: 8%;
 
 
 }
 
+.Login-Container{
+  min-height: calc(100vh - 122px - 66.84px + 5px);
+}
+
 .Intro-Homepage{
-    padding: 7% 8% 9.8% 8%;
+
     margin: 0;
 }
 
@@ -226,7 +224,7 @@ p{
   text-align: left;
   padding: 1%;
   position: relative;
-    min-height: calc(100vh - 122px - 66.84px);
+    min-height: calc(100vh - 122px - 66.84px + 5px);
 
 }
 
@@ -244,4 +242,9 @@ p{
 .SUBMIT,submit{
   text-align: right;
   color: red;
+}
+
+.infoR{
+  position: absolute;
+  bottom: 0;
 }
