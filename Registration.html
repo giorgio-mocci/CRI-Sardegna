@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>CRIS </title>
+  <!-- bootstrap e mio css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <!-- font importati -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/logo.png">
+  <!-- import delle icone tipo chiave, lucchetto...-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+<body>
+
+  <!-- classica gestione della parte superiore della pagina -->
+
+  <div id="topper">
+      <nav class="navbar navbar-expand-lg ">
+
+        <a class="nav-link" href="index.html ">
+        <img class="logo" src="img/logo.png" alt="cri-logo"></a>
+        <a class="nav-link" href="index.html ">
+        <h3 class="navbar-brand">Croce Rossa italiana <br> <span class="topper-sottotitolo">comitato regionale Sardegna</span></h3></a>
+        <!-- gestione menu hamburger quando pagina viene ristretta -->
+        <button class="navbar-toggler navbar-light panino" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse collapsed-panino" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Homepage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+        <!-- fine gestione hamburger -->
+      </nav>
+  </div>
+
+
+
+<div class="Form-SignUP">
+
+
+
+
+
+    <div class="Titolo-Paragrafo">
+      <br>
+      <h2>Registrati Ora</h2>
+    </div>
+
+
+
+
+    <br>
+
+
+  <div class="row">
+      <!-- colonna 1 -->
+  <div class="col">
+
+    <input id="text" name="Nome" type="text" class = "inputForm" placeholder="NOME" >
+    <br>
+    <br>
+    <input id="password" name="password" type="password" class = "inputForm" placeholder="Password" >
+    <br><br>
+    <input id="Email" name="Email" type="email"class = "inputForm" placeholder="Email">
+  </div>
+  <!-- colonna 2 -->
+  <div class="col">
+
+    <input id="text" name="Cognome" type="text" class = "inputForm" placeholder="Cognome">
+    <br><br>
+    <input id="confirm_password" name="confirm_password" type="password" class = "inputForm" placeholder="Conferma Password">
+    <br><br>
+    <input type="text" id="iscritti_codicefiscale" pattern="^[a-zA-Z]{6}[0-9]{2}[a-zA-Z][0-9]{2}[a-zA-Z][0-9]{3}[a-zA-Z]$" required="required" class = "inputForm" placeholder="Codice Fiscale">
+  </div>
+</div>
+
+<br>
+
+      <hr>
+
+        <!-- Inserimento comitati -->
+      <p>
+        <div class="Comitati">
+          <h5>Comitato di Appartenenza :</h5>
+          <input type="radio" id="Bosa" name="Comitato" value="Bosa">
+          <label for="Bosa">Bosa</label>
+
+          <input type="radio" id="Cagliari" name="Comitato" value="Cagliari">
+          <label for="Cagliari">Cagliari</label>
+
+          <input type="radio" id="Nuoro" name="Comitato" value="Nuoro">
+          <label for="Nuoro">Nuoro</label>
+
+          <input type="radio" id="Olbia" name="Comitato" value="Olbia">
+          <label for="Olbia">Olbia</label>
+
+          <input type="radio" id="Oristano" name="Comitato" value="Oristano">
+          <label for="Oristano">Oristano</label>
+
+          <input type="radio" id="Sassari" name="Comitato" value="Sassari">
+          <label for="Sassari">Sassari</label>
+          <br>
+        <hr>
+
+        </div>
+
+
+        <!-- Inserimento competenze -->
+        <br>
+      <h5 style = "text-align: center;" >Competenze:</h5>
+
+      <div class="row">
+          <!-- COLONNA 1 -->
+          <div class="col">
+            <label for="Competenze" class="form-check-label">Montaggio tende ministeriali</label>
+            <input type="checkbox" name="Competenze" value="Montaggio tende ministeriali" id="Comp_tende_ministeriali" >
+            <br>
+            <label for="Competenze" class="form-check-label">Patente Nautica</label>
+            <input type="checkbox" name="Competenze" value="Patente Nautica" id="Comp_Patente_Nautica" >
+            <br>
+            <label for="Competenze" class="form-check-label">Medico</label>
+            <input type="checkbox" name="Competenze" value="Medico" id="Comp_Medico" >
+            <br>
+            <label for="Competenze" class="form-check-label">Educatore</label>
+            <input type="checkbox" name="Competenze" value="Educatore" id="Comp_Educatore" >
+            <br>
+            <label for="Competenze" class="form-check-label">Utilizzo Idrovora</label>
+            <input type="checkbox" name="Competenze" value="Utilizzo Idrovora" id="Comp_Utilizzo Idrovora" >
+
+
+
+
+          </div>
+          <!-- COLONNA 2 -->
+          <div class="col">
+            <label for="Competenze" class="form-check-label">Montaggio tende pneumatiche</label>
+            <input type="checkbox" name="Competenze" value="Montaggio tende pneumatiche" id="Comp_tende ministeriali" >
+            <br>
+            <label for="Competenze" class="form-check-label">Patente Mezzi CRI in emergenza</label>
+            <input type="checkbox" name="Competenze" value="Patente Mezzi CRI in emergenza" id="Comp_Patente_Mezzi_CRI" >
+            <br>
+            <label for="Competenze" class="form-check-label">Infermiere</label>
+            <input type="checkbox" name="Competenze" value="Infermiere" id="Comp_Infermiere" >
+            <br>
+            <label for="Competenze" class="form-check-label">Psicologo</label>
+            <input type="checkbox" name="Competenze" value="Psicologo" id="Comp_Psicologo" >
+            <br>
+            <label for="Competenze" class="form-check-label">Segreteria</label>
+            <input type="checkbox" name="Competenze" value="Segreteria" id="Comp_Segreteria" >
+            <br>
+
+
+          </div>
+          <!-- COLONNA 3 -->
+          <div class="col">
+            <label for="Competenze" class="form-check-label">HACCP</label>
+            <input type="checkbox" name="Competenze" value="HACCP" id="HACCP" >
+            <br>
+            <label for="Competenze" class="form-check-label">Operatore 118</label>
+            <input type="checkbox" name="Competenze" value="Operatore 118" id="Comp_Operatore_118" >
+            <br>
+            <label for="Competenze" class="form-check-label">Addetto cucina</label>
+            <input type="checkbox" name="Competenze" value="Addetto cucina" id="Comp_Addetto_cucina" >
+            <br>
+            <label for="Competenze" class="form-check-label">Interprete</label>
+            <input type="checkbox" name="Competenze" value="Interprete" id="Comp_Interprete" >
+            <br>
+            <label for="Competenze" class="form-check-label">Telecomunicazioni</label>
+            <input type="checkbox" name="Competenze" value="Telecomunicazioni" id="Comp_Telecomunicazioni" >
+            <br>
+
+
+          </div>
+          <!-- COLONNA 4 -->
+          <div class="col">
+            <label for="Competenze" class="form-check-label">OPSA</label>
+            <input type="checkbox" name="Competenze" value="OPSA" id="OPSA" >
+            <br>
+            <label for="Competenze" class="form-check-label">Operatore Dae</label>
+            <input type="checkbox" name="Competenze" value="Operatore Dae" id="Comp_Operatore_Dae" >
+            <br>
+            <label for="Competenze" class="form-check-label">Idraulico</label>
+            <input type="checkbox" name="Competenze" value="Idraulico" id="Comp_Idraulico" >
+            <br>
+            <label for="Competenze" class="form-check-label">Mediatore Culturale</label>
+            <input type="checkbox" name="Competenze" value="Mediatore Culturale" id="Comp_Mediatore_Culturale" >
+            <br>
+            <label for="Competenze" class="form-check-label">OPEM</label>
+            <input type="checkbox" name="Competenze" value="OPEM" id="Comp_OPEM" >
+            <br>
+          </div>
+      </div>
+      <br><hr><br>
+
+
+      <div class="row">
+        <div class="col ">
+
+          <div class="infoR">
+            <h6>Una volta completata la Registrazione, potrai inserire le tue disponibilità nella sezione profilo</h6>
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="SUBMIT">
+                <p><a href="Registration.html" class="btn btn-lg btn-danger bottone-login">Crea il mio account</a></p>
+
+          </div>
+        </div>
+      </div>
+
+</div>
+
+
+
+
+<div class="footer">
+  <div class="container-fluid">
+    <p class="disclaimer">Sito riservato esclusivamente a uso degli operatori di Croce Rossa della regione Sardegna</p>
+  </div>
+</div>
+
+
+
+
+
+</body>
