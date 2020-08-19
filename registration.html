@@ -79,6 +79,8 @@
     <input id="password" name="password" type="password" class = "inputForm" placeholder="Password" >
     <br><br>
     <input id="Email" name="Email" type="email"class = "inputForm" placeholder="Email">
+    <br><br>
+    <input type="tel" id="phone" name="telefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Telefono" class="inputForm">
   </div>
   <!-- colonna 2 -->
   <div class="col">
@@ -88,6 +90,14 @@
     <input id="confirm_password" name="confirm_password" type="password" class = "inputForm" placeholder="Conferma Password">
     <br><br>
     <input type="text" id="iscritti_codicefiscale" pattern="^[a-zA-Z]{6}[0-9]{2}[a-zA-Z][0-9]{2}[a-zA-Z][0-9]{3}[a-zA-Z]$" required="required" class = "inputForm" placeholder="Codice Fiscale">
+    <br><br>
+    <div class="Termini-condizioni">
+      Ho letto e accetto i  <a href="termini-condizioni.html" style="color : red;"> termini e le condizioni   </a>
+      <input type="checkbox" name="Termini-condizioni" value="Termini-condizioni" id="terms-condition" >
+    </div>
+
+
+
   </div>
 </div>
 
@@ -221,7 +231,7 @@
         </div>
         <div class="col">
           <div class="SUBMIT">
-                <p><a href="Registration.html" class="btn btn-lg btn-danger bottone-login">Iscriviti</a></p>
+                <p><a href="registration.html" class="btn btn-lg btn-danger bottone-login">Iscriviti</a></p>
 
           </div>
         </div>
