@@ -28,7 +28,7 @@ Mappa.addLayer(LayerMarkers);
 addMarkers();
 
 // Imposto lo zoom
-var zoom = 7.5;
+var zoom = 7;
 
 // Imposto le coordinate di lonLat come centro della mappa di partenza
 Mappa.setCenter(centro, zoom);
