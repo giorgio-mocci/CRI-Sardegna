@@ -16,12 +16,9 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- import mappa -->
+  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
 </head>
-
-
-
-
-<body>
 
   <!-- classica gestione della parte superiore della pagina -->
 
@@ -53,15 +50,15 @@
 
 
 
+          <div class="Primo-rettangolo">
+
+            <h1>Sei un volontario di Croce Rossa della Regione Sardegna?</h1>
+            <h5>Clicca sul pulsante qui sotto per registrarti e essere attivo nella gestione delle Emergenze .</h5>
+            <p><a href="registration.html" class="btn btn-lg btn-danger bottone-login">Registrati</a></p>
+          </div>
 
 
 
-        <div class="Primo-rettangolo">
-
-          <h1>Sei un volontario di Croce Rossa della Regione Sardegna?</h1>
-          <h5>Clicca sul pulsante qui sotto per registrarti e essere attivo nella gestione delle Emergenze .</h5>
-          <p><a href="registration.html" class="btn btn-lg btn-danger bottone-login">Registrati</a></p>
-        </div>
 
         <div class="Post-rettangolo">
     <div class="row">
@@ -114,9 +111,10 @@
         <div class="col">
           <div class = "Right-part">
           <h5 style>I volontari e i comitati già iscritti</h5>
-          <img src="img/Sardegna.jpg" width="600" alt="Mappa Sardegna">
-          <!-- Per ora solo un place holder, l ideale sarebbe riuscire a implementare, tramite le API di maps, una mappa che si aggiorna
-               Dinamicamente in base agli utenti registrati-->
+
+
+
+          <div id="map" style="width:60vh;height:90vh"></div>
           </div>
         </div><!-- finisco di gestire parte destra  -->
 
@@ -134,7 +132,9 @@
   <div class="container-fluid">
     <p class="disclaimer">Sito riservato esclusivamente a uso degli operatori di Croce Rossa della regione Sardegna</p>
   </div>
+  <!--jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/map.js" type="text/javascript">
 
-
-
+  </script>
 </body>
