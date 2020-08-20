@@ -59,20 +59,28 @@
 
 
   <div class="Lato-Sinistro">
-      <div class="Profilo">
-        <h5>Volontario</h5>
-      </div>
-      <h5 style = "color : red;">Nome Volontario</h5>
-      <h5 style = "color : red;">Comitato di "..."</h5>
-      <a href="update-profile.html" style = "color:black; "> <h5>Modifica Profilo</h5> </a>
-      <a href="update-aviability.html" style = "color:black; ">   <h5>Aggiorna disponibilità</h5> </a>
-      <a href="update-skill.html" style = "color:black; "> <h5>Aggiorna competenze</h5> </a>
-      <br>
-      <div class="Profilo">
-        <h5>Solo per responsabili</h5>
-      </div>
-      <a href="#" style = "color:black; "> <h5>Ricerca volontari</h5> </a>
-      <a href="#" style = "color:black; "> <h5>Promuovi volontari</h5> </a>
+    <div class="Profilo">
+      <h5>Volontario</h5>
+    </div>
+    <h5 style = "color : red;">Nome Volontario</h5>
+    <h5 style = "color : red;">Comitato di "..."</h5>
+    <a href="update-profile.html" style = "color:black; "> <h5>Modifica Profilo</h5> </a>
+    <a href="update-aviability.html" style = "color:black; ">   <h5>Aggiorna disponibilità</h5> </a>
+    <a href="update-skill.html" style = "color:black; "> <h5>Aggiorna competenze</h5> </a>
+    <br>
+    <div class="Profilo">
+      <h5>Solo per responsabili</h5>
+    </div>
+    <a href="#" style = "color:black; "> <h5>Aggiorna inventario comitato</h5> </a>
+
+    <a href="#" style = "color:black; "> <h5>Abilita volontari nel tuo comitato</h5> </a>
+    <a href="#" style = "color:black; "> <h5>Promuovi volontari</h5> </a>
+    <div class="Profilo">
+      <h5>Solo per DRAE</h5>
+    </div>
+    <a href="#" style = "color:black; "> <h5>Ricerca volontari</h5> </a>
+    <a href="#" style = "color:black; "> <h5>Ricerca mezzi e attrezzature </h5> </a>
+    <a href="#" style = "color:black; "> <h5>Crea o gestisci eventi </h5> </a>
 
 
 
@@ -84,15 +92,21 @@
   <div class="Lato-Destro">
 
     <div class="Profilo">
-      <h5 style = "text-align : center;">Le tue disponibilità :</h5>
+      <h5 style = "text-align : center;">Eventi disponibili :</h5>
     </div>
 
-    <br>
+
     <h6>Ovviamente, come per la cartina, è solo un placeholder, andrà implementato con js, collegato al database e reso dinamico</h6>
-    <div class="Calendario">
-      <img src="img/calendario-agosto.jpg" alt="Calendario mock-up" width="540">
-    </div>
     <br>
+    <h5 style = " font-weight : normal;">Di seguito puoi trovare gli eventi in corso, ai quali non hai ancora dato la tua disponibilità spunta la casellina, e clicca salva per espirmerla</h5>
+    <br><br>
+    <ul>
+      <li>EVENTO 1  <input type="checkbox" name="Evento1" value="Evento1" id="Evento1" ></li>
+      <li>EVENTO 2  <input type="checkbox" name="Evento2" value="Evento2" id="Evento2" ></li>
+      <li>EVENTO 3  <input type="checkbox" name="Evento3" value="Evento3" id="Evento3" ></li>
+    </ul>
+    <br>
+      <h6>Ovviamente,al posto di "evento1" ci saranno tutte le varie informazioni del caso, sull evento stesso</h6>
     <div class="Bottoni-update">
       <a href="#" class="btn btn-lg btn-danger bottone-login">Modifica</a>
       <a href="#" class="btn btn-lg btn-danger bottone-login">Salva</a>
