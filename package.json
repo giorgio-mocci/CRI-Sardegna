@@ -1,0 +1,27 @@
+{
+  "name": "cri-sardegna",
+  "version": "1.0.0",
+  "description": "CRI Sardegna",
+  "main": "index.js",
+  "engines": {
+    "node": "8.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giorgio-mocci/CRI-Sardegna.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giorgio-mocci/CRI-Sardegna/issues"
+  },
+  "homepage": "https://github.com/giorgio-mocci/CRI-Sardegna#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
