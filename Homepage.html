@@ -16,7 +16,8 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+  <!-- import mappa -->
+  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
 </head>
 
 
@@ -72,8 +73,16 @@
       <div class="Profilo">
         <h5>Solo per responsabili</h5>
       </div>
-      <a href="#" style = "color:black; "> <h5>Ricerca volontari</h5> </a>
+      <a href="#" style = "color:black; "> <h5>Aggiorna inventario comitato</h5> </a>
+
+      <a href="#" style = "color:black; "> <h5>Abilita volontari nel tuo comitato</h5> </a>
       <a href="#" style = "color:black; "> <h5>Promuovi volontari</h5> </a>
+      <div class="Profilo">
+        <h5>Solo per DRAE</h5>
+      </div>
+      <a href="#" style = "color:black; "> <h5>Ricerca volontari</h5> </a>
+      <a href="#" style = "color:black; "> <h5>Ricerca mezzi e attrezzature </h5> </a>
+      <a href="#" style = "color:black; "> <h5>Crea o gestisci eventi </h5> </a>
 
 
 
@@ -84,7 +93,10 @@
       <div class="Profilo">
         <h5 style = "text-align : center;">I volontari presenti nella regione :</h5>
       </div>
-      <img src="img/Sardegna.jpg" width="300" alt="Mappa Sardegna">
+      <div class="container-map">
+        <div id="map" style="width:23vw;height:100vh; max-height: 700px;"></div>
+      </div>
+
       <br><br>
 
   </div>
@@ -177,7 +189,7 @@
     </div>
 
     <div class="Spazio" style = "background-color:#EEEEEE;" >
-      <br><br>
+      <br><br><br><br><br><br>
     </div>
 
     <div class="Profilo">
@@ -185,13 +197,21 @@
     </div>
     <br>
     <h6>Ovviamente, come per la cartina, è solo un placeholder, andrà implementato con js, collegato al database e reso dinamico</h6>
-    <div class="Calendario">
-      <img src="img/calendario-agosto.jpg" alt="Calendario mock-up" width="540">
+
+    <h4>Al momento non hai nessun evento al quale hai espresso la tua disponibilità di intervento.</h4>
+
+    <br>
+
+    <div class="Spazio" style = "background-color:#EEEEEE;" >
+      <br><br><br><br><br><br>
+    </div>
+
+    <div class="Profilo">
+      <h5 style = "text-align : center;">Eventi attivi: :</h5>
     </div>
     <br>
-    <h6>Ovviamente,la cartina e il calendario dovranno terminare nella stessa riga, mo non ci sto a perdere tempo perchè poi andaranno cambiate, ma mi sembra scontato</h6>
-
-
+    <h4>Al momento non è presente nessun evento attivo nella tua zona.</h4>
+    <br>
 
 
   </div>
@@ -211,7 +231,11 @@
 </div>
 
 
+<!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/map.js" type="text/javascript">
 
+</script>
 
 
 </body>
