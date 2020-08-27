@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>CRIS </title>
+  <!-- bootstrap e mio css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <!-- font importati -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/logo.png">
+  <!-- import delle icone tipo chiave, lucchetto...-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- import mappa -->
+  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+</head>
+
+
+
+
+<body>
+
+  <!-- classica gestione della parte superiore della pagina -->
+
+  <div id="topper">
+      <nav class="navbar navbar-expand-lg ">
+
+        <a class="nav-link" href="homepage">
+        <img class="logo" src="img/logo.png" alt="cri-logo"></a>
+        <a class="nav-link" href="homepage">
+        <h3 class="navbar-brand">Croce Rossa italiana <br> <span class="topper-sottotitolo">comitato regionale Sardegna</span></h3></a>
+        <!-- gestione menu hamburger quando pagina viene ristretta -->
+        <button class="navbar-toggler navbar-light panino" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse collapsed-panino" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="homepage">Homepage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+        <!-- fine gestione hamburger -->
+      </nav>
+  </div>
+
+
+
+
+
+
+<div class="Homepage">
+
+
+  <div class="Lato-Sinistro">
+      <div class="Profilo">
+        <h5>Volontario</h5>
+      </div>
+      <h5 style = "color : red;">Nome Volontario</h5>
+      <h5 style = "color : red;">Comitato di "..."</h5>
+      <a href="aggiorna-profilo" style = "color:black; "> <h5>Modifica Profilo</h5> </a>
+      <a href="aggiorna-disponibilita" style = "color:black; ">   <h5>Aggiorna disponibilità</h5> </a>
+      <a href="aggiorna-competenze" style = "color:black; "> <h5>Aggiorna competenze</h5> </a>
+      <br>
+      <div class="Profilo">
+        <h5>Solo per responsabili</h5>
+      </div>
+      <a href="#" style = "color:black; "> <h5>Aggiorna inventario comitato</h5> </a>
+
+      <a href="#" style = "color:black; "> <h5>Abilita volontari nel tuo comitato</h5> </a>
+      <a href="#" style = "color:black; "> <h5>Promuovi volontari</h5> </a>
+      <div class="Profilo">
+        <h5>Solo per DRAE</h5>
+      </div>
+      <a href="#" style = "color:black; "> <h5>Ricerca volontari</h5> </a>
+      <a href="#" style = "color:black; "> <h5>Ricerca mezzi e attrezzature </h5> </a>
+      <a href="#" style = "color:black; "> <h5>Crea o gestisci eventi </h5> </a>
+
+
+
+      <div class="Spazio" style = "background-color:#EEEEEE;" >
+        <br><br>
+      </div>
+
+      <div class="Profilo">
+        <h5 style = "text-align : center;">I volontari presenti nella regione :</h5>
+      </div>
+      <div class="container-map">
+        <div id="map" style="width:23vw;height:100vh; max-height: 700px;"></div>
+      </div>
+
+      <br><br>
+
+  </div>
+
+  <div class="Lato-Destro">
+    <div class="Profilo">
+      <h5 style = "text-align : center;">Le tue competenze :</h5>
+    </div>
+
+
+    <br>
+    <div class="row">
+        <!-- COLONNA 1 -->
+        <div class="col">
+          <label for="Competenze" class="form-check-label">Montaggio tende ministeriali</label>
+          <input type="checkbox" name="Competenze" value="Montaggio tende ministeriali" id="Comp_tende_ministeriali" >
+          <br>
+          <label for="Competenze" class="form-check-label">Patente Nautica</label>
+          <input type="checkbox" name="Competenze" value="Patente Nautica" id="Comp_Patente_Nautica" >
+          <br>
+          <label for="Competenze" class="form-check-label">Medico</label>
+          <input type="checkbox" name="Competenze" value="Medico" id="Comp_Medico" >
+          <br>
+          <label for="Competenze" class="form-check-label">Educatore</label>
+          <input type="checkbox" name="Competenze" value="Educatore" id="Comp_Educatore" >
+          <br>
+          <label for="Competenze" class="form-check-label">Utilizzo Idrovora</label>
+          <input type="checkbox" name="Competenze" value="Utilizzo Idrovora" id="Comp_Utilizzo Idrovora" >
+          <br>
+          <label for="Competenze" class="form-check-label">OPSA</label>
+          <input type="checkbox" name="Competenze" value="OPSA" id="OPSA" >
+          <br>
+          <label for="Competenze" class="form-check-label">Mediatore Culturale</label>
+          <input type="checkbox" name="Competenze" value="Mediatore Culturale" id="Comp_Mediatore_Culturale" >
+          <br><br>
+
+
+
+        </div>
+        <!-- COLONNA 2 -->
+        <div class="col">
+          <label for="Competenze" class="form-check-label">Montaggio tende pneumatiche</label>
+          <input type="checkbox" name="Competenze" value="Montaggio tende pneumatiche" id="Comp_tende ministeriali" >
+          <br>
+          <label for="Competenze" class="form-check-label">Patente Mezzi CRI in emergenza</label>
+          <input type="checkbox" name="Competenze" value="Patente Mezzi CRI in emergenza" id="Comp_Patente_Mezzi_CRI" >
+          <br>
+          <label for="Competenze" class="form-check-label">Infermiere</label>
+          <input type="checkbox" name="Competenze" value="Infermiere" id="Comp_Infermiere" >
+          <br>
+          <label for="Competenze" class="form-check-label">Psicologo</label>
+          <input type="checkbox" name="Competenze" value="Psicologo" id="Comp_Psicologo" >
+          <br>
+          <label for="Competenze" class="form-check-label">Segreteria</label>
+          <input type="checkbox" name="Competenze" value="Segreteria" id="Comp_Segreteria" >
+          <br>
+          <label for="Competenze" class="form-check-label">Operatore Dae</label>
+          <input type="checkbox" name="Competenze" value="Operatore Dae" id="Comp_Operatore_Dae" >
+          <br>
+          <label for="Competenze" class="form-check-label">OPEM</label>
+          <input type="checkbox" name="Competenze" value="OPEM" id="Comp_OPEM" >
+          <br>
+
+
+        </div>
+        <!-- COLONNA 3 -->
+        <div class="col">
+          <label for="Competenze" class="form-check-label">HACCP</label>
+          <input type="checkbox" name="Competenze" value="HACCP" id="HACCP" >
+          <br>
+          <label for="Competenze" class="form-check-label">Operatore 118</label>
+          <input type="checkbox" name="Competenze" value="Operatore 118" id="Comp_Operatore_118" >
+          <br>
+          <label for="Competenze" class="form-check-label">Addetto cucina</label>
+          <input type="checkbox" name="Competenze" value="Addetto cucina" id="Comp_Addetto_cucina" >
+          <br>
+          <label for="Competenze" class="form-check-label">Interprete</label>
+          <input type="checkbox" name="Competenze" value="Interprete" id="Comp_Interprete" >
+          <br>
+          <label for="Competenze" class="form-check-label">Telecomunicazioni</label>
+          <input type="checkbox" name="Competenze" value="Telecomunicazioni" id="Comp_Telecomunicazioni" >
+          <br>
+          <label for="Competenze" class="form-check-label">Idraulico</label>
+          <input type="checkbox" name="Competenze" value="Idraulico" id="Comp_Idraulico" >
+          <br>
+
+        </div>
+        <!-- COLONNA 4 -->
+
+    </div>
+
+    <div class="Spazio" style = "background-color:#EEEEEE;" >
+      <br><br><br><br><br><br>
+    </div>
+
+    <div class="Profilo">
+      <h5 style = "text-align : center;">Le tue disponibilità :</h5>
+    </div>
+    <br>
+    <h6>Ovviamente, come per la cartina, è solo un placeholder, andrà implementato con js, collegato al database e reso dinamico</h6>
+
+    <h4>Al momento non hai nessun evento al quale hai espresso la tua disponibilità di intervento.</h4>
+
+    <br>
+
+    <div class="Spazio" style = "background-color:#EEEEEE;" >
+      <br><br><br><br><br><br>
+    </div>
+
+    <div class="Profilo">
+      <h5 style = "text-align : center;">Eventi attivi: :</h5>
+    </div>
+    <br>
+    <h4>Al momento non è presente nessun evento attivo nella tua zona.</h4>
+    <br>
+
+
+  </div>
+
+
+
+
+</div>
+
+
+
+
+<div class="footer">
+  <div class="container-fluid">
+    <p class="disclaimer">Sito riservato esclusivamente a uso degli operatori di Croce Rossa della regione Sardegna</p>
+  </div>
+</div>
+
+
+<!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/map.js" type="text/javascript">
+
+</script>
+
+
+</body>
