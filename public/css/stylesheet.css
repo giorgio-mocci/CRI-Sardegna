@@ -294,3 +294,7 @@ text-align: left;
   text-align: right;
   margin : 1%;
 }
+/*classe che si prende il messaggio di errore in caso l'utente inserisca nel form cose brutte*/
+.error {
+   color: red;
+}
