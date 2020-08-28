@@ -21,9 +21,6 @@
   </script>
 </head>
 
-
-
-
 <body>
 
   <!-- classica gestione della parte superiore della pagina -->
@@ -54,58 +51,41 @@
     </nav>
   </div>
 
-
-
   <form class="Form-SignUP" id="form" action="pre-autorizzazione" method="post">
-
-
-
-
-
     <div class="Titolo-Paragrafo">
       <br>
       <h2>Registrati Ora</h2>
     </div>
-
-
-
-
     <br>
-
-
     <div class="row">
-
-
       <!-- colonna 1 -->
       <div class="col">
 
-        <input  name="nome" type="text" class="inputForm" placeholder="Nome">
+        <input name="nome" type="text" class="inputForm" placeholder="Nome">
         <br>
         <br>
-        <input id="password" name="password" type="password" class="inputForm" placeholder="Password">
+        <input name="password" type="password" class="inputForm" placeholder="Password" id="password">
         <br><br>
-        <input id="Email" name="email" type="email" class="inputForm" placeholder="Email">
+        <input name="email" type="email" class="inputForm" placeholder="Email">
         <br><br>
-        <input type="tel" id="phone" name="telefono" placeholder="Telefono" class="inputForm">
+        <input type="text" name="telefono" placeholder="Telefono" class="inputForm">
       </div>
       <!-- colonna 2 -->
       <div class="col">
 
-        <input  name="cognome" type="text" class="inputForm" placeholder="Cognome">
+        <input name="cognome" type="text" class="inputForm" placeholder="Cognome">
         <br><br>
-        <input id="confirm_password" name="confirm_password" type="password" class="inputForm" placeholder="Conferma Password">
+        <input name="confirm_password" type="password" class="inputForm" placeholder="Conferma Password">
         <br><br>
-        <input type="text" id="iscritti_codicefiscale" name="cf" class="inputForm" placeholder="Codice Fiscale">
+        <input type="text" name="cf" class="inputForm" placeholder="Codice Fiscale">
         <br><br>
         <div class="Termini-condizioni">
-          Ho letto e accetto i <a href="termini-condizioni" style="color : red;"> termini e le condizioni </a>
-          <input type="checkbox" name="termini_condizioni" value="Termini-condizioni" id="terms-condition">
+          Ho letto e accetto i <a href="termini-condizioni" class="red"> termini e le condizioni </a>
+          <input type="checkbox" name="termini_condizioni" value="Termini-condizioni">
         </div>
       </div>
     </div>
-
     <br>
-
     <hr>
 
     <!-- Inserimento comitati -->
@@ -114,37 +94,36 @@
       <h5 id="comitatoErr">Comitato di Appartenenza :</h5>
       <br>
       <input type="radio" name="comitato" value="Bosa">
-      <label for="Bosa">Bosa</label>
+      <label>Bosa</label>
 
-      <input type="radio"  name="comitato" value="Cagliari">
-      <label for="Cagliari">Cagliari</label>
+      <input type="radio" name="comitato" value="Cagliari">
+      <label>Cagliari</label>
 
-      <input type="radio"  name="comitato" value="Nuoro">
-      <label for="Nuoro">Nuoro</label>
+      <input type="radio" name="comitato" value="Nuoro">
+      <label>Nuoro</label>
 
-      <input type="radio"  name="comitato" value="Olbia">
-      <label for="Olbia">Olbia</label>
+      <input type="radio" name="comitato" value="Olbia">
+      <label>Olbia</label>
 
       <input type="radio" name="comitato" value="Oristano">
-      <label for="Oristano">Oristano</label>
+      <label>Oristano</label>
 
       <input type="radio" name="comitato" value="Sassari">
-      <label for="Sassari">Sassari</label>
+      <label>Sassari</label>
       <br>
       <hr>
 
     </div>
 
-
     <!-- Inserimento competenze -->
 
-    <h5 style="text-align: center;">Competenze:</h5>
+    <h5 class="centred">Competenze:</h5>
     <br>
     <div class="row">
       <!-- COLONNA 1 -->
       <div class="col">
         <label for="Competenze" class="form-check-label">Montaggio tende ministeriali</label>
-        <input type="checkbox" name="competenze" value="Montaggio tende ministeriali" id="Comp_tende_ministeriali">
+        <input type="checkbox" name="competenze" value="Montaggio tende ministeriali" value="" id="Comp_tende_ministeriali">
         <br>
         <label for="Competenze" class="form-check-label">Patente Nautica</label>
         <input type="checkbox" name="competenze" value="Patente Nautica" id="Comp_Patente_Nautica">
@@ -236,7 +215,7 @@
 
       </div>
       <div class="col">
-        <button type="submit" class="SUBMIT btn btn-lg btn-danger bottone-login" name="button">Iscriviti</button>
+        <button type="submit" class="SUBMIT btn btn-lg btn-danger bottone-login" name="button"><i class="fas fa-user-plus"></i> Iscriviti</button>
       </div>
     </div>
 
@@ -247,9 +226,4 @@
       <p class="disclaimer">Sito riservato esclusivamente a uso degli operatori di Croce Rossa della regione Sardegna</p>
     </div>
   </div>
-
-
-
-
-
 </body>

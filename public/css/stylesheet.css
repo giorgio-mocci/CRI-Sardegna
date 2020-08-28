@@ -215,6 +215,18 @@ p{
   margin right: : 1000px;
 }
 
+.red{
+    color: #fd2e2e;
+}
+
+.black{
+  color: black;
+}
+
+.white{
+  color: #EEEEEE;
+}
+
 .Right-part{
     color : red;
     padding: 2% 5% 5% 5%;
@@ -294,6 +306,18 @@ text-align: left;
   text-align: right;
   margin : 1%;
 }
+
+.centred{
+  text-align: center;
+}
+
+#map{
+   width:40vw;
+   height:70vh;
+   min-height : 800px;
+   max-height: 1000px;
+}
+
 /*classe che si prende il messaggio di errore in caso l'utente inserisca nel form cose brutte*/
 .error {
    color: red;
