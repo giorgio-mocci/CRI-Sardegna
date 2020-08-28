@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-var items = [];
+
 
 app.get("/",function(req,res){
   res.render("index");
@@ -39,10 +39,7 @@ app.get("/aggiorna-profilo", function(req,res){
   res.render("aggiorna-profilo");
 });
 
-app.post("/",function(req,res){
-  items.push(req.body.newItem);
-  res.redirect("/");
-});
+
 
 app.listen(process.env.PORT || 3000,function(){
   console.log("server started on port 3000");
