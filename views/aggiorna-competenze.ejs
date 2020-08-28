@@ -16,6 +16,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="js/input_disable.js" type="text/javascript"></script>
 </head>
 
 
@@ -96,29 +97,32 @@
 
 
     <br>
+    <form class="" action="" method="post">
     <div class="row">
+
+
         <!-- COLONNA 1 -->
         <div class="col">
           <label for="Competenze" class="form-check-label">Montaggio tende ministeriali</label>
-          <input type="checkbox" name="Competenze" value="Montaggio tende ministeriali" id="Comp_tende_ministeriali" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="Montaggio tende ministeriali" id="Comp_tende_ministeriali" >
           <br>
           <label for="Competenze" class="form-check-label">Patente Nautica</label>
-          <input type="checkbox" name="Competenze" value="Patente Nautica" id="Comp_Patente_Nautica" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="Patente Nautica" id="Comp_Patente_Nautica" >
           <br>
           <label for="Competenze" class="form-check-label">Medico</label>
-          <input type="checkbox" name="Competenze" value="Medico" id="Comp_Medico" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="Medico" id="Comp_Medico" >
           <br>
           <label for="Competenze" class="form-check-label">Educatore</label>
-          <input type="checkbox" name="Competenze" value="Educatore" id="Comp_Educatore" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="Educatore" id="Comp_Educatore" >
           <br>
           <label for="Competenze" class="form-check-label">Utilizzo Idrovora</label>
-          <input type="checkbox" name="Competenze" value="Utilizzo Idrovora" id="Comp_Utilizzo Idrovora" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="Utilizzo Idrovora" id="Comp_Utilizzo Idrovora" >
           <br>
           <label for="Competenze" class="form-check-label">OPSA</label>
-          <input type="checkbox" name="Competenze" value="OPSA" id="OPSA" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="OPSA" id="OPSA" >
           <br>
           <label for="Competenze" class="form-check-label">Mediatore Culturale</label>
-          <input type="checkbox" name="Competenze" value="Mediatore Culturale" id="Comp_Mediatore_Culturale" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="Mediatore Culturale" id="Comp_Mediatore_Culturale" >
           <br>
 
 
@@ -127,25 +131,25 @@
         <!-- COLONNA 2 -->
         <div class="col">
           <label for="Competenze" class="form-check-label">Montaggio tende pneumatiche</label>
-          <input type="checkbox" name="Competenze" value="Montaggio tende pneumatiche" id="Comp_tende ministeriali" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="Montaggio tende pneumatiche" id="Comp_tende ministeriali" >
           <br>
           <label for="Competenze" class="form-check-label">Patente Mezzi CRI in emergenza</label>
-          <input type="checkbox" name="Competenze" value="Patente Mezzi CRI in emergenza" id="Comp_Patente_Mezzi_CRI" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="Patente Mezzi CRI in emergenza" id="Comp_Patente_Mezzi_CRI" >
           <br>
           <label for="Competenze" class="form-check-label">Infermiere</label>
-          <input type="checkbox" name="Competenze" value="Infermiere" id="Comp_Infermiere" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="Infermiere" id="Comp_Infermiere" >
           <br>
           <label for="Competenze" class="form-check-label">Psicologo</label>
-          <input type="checkbox" name="Competenze" value="Psicologo" id="Comp_Psicologo" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="Psicologo" id="Comp_Psicologo" >
           <br>
           <label for="Competenze" class="form-check-label">Segreteria</label>
-          <input type="checkbox" name="Competenze" value="Segreteria" id="Comp_Segreteria" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="Segreteria" id="Comp_Segreteria" >
           <br>
           <label for="Competenze" class="form-check-label">Operatore Dae</label>
-          <input type="checkbox" name="Competenze" value="Operatore Dae" id="Comp_Operatore_Dae" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="Operatore Dae" id="Comp_Operatore_Dae" >
           <br>
           <label for="Competenze" class="form-check-label">OPEM</label>
-          <input type="checkbox" name="Competenze" value="OPEM" id="Comp_OPEM" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="OPEM" id="Comp_OPEM" >
 
 
 
@@ -153,33 +157,34 @@
         <!-- COLONNA 3 -->
         <div class="col">
           <label for="Competenze" class="form-check-label">HACCP</label>
-          <input type="checkbox" name="Competenze" value="HACCP" id="HACCP" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="HACCP" id="HACCP" >
           <br>
           <label for="Competenze" class="form-check-label">Operatore 118</label>
-          <input type="checkbox" name="Competenze" value="Operatore 118" id="Comp_Operatore_118" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="Operatore 118" id="Comp_Operatore_118" >
           <br>
           <label for="Competenze" class="form-check-label">Addetto cucina</label>
-          <input type="checkbox" name="Competenze" value="Addetto cucina" id="Comp_Addetto_cucina" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="Addetto cucina" id="Comp_Addetto_cucina" >
           <br>
           <label for="Competenze" class="form-check-label">Interprete</label>
-          <input type="checkbox" name="Competenze" value="Interprete" id="Comp_Interprete" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="Interprete" id="Comp_Interprete" >
           <br>
           <label for="Competenze" class="form-check-label">Telecomunicazioni</label>
-          <input type="checkbox" name="Competenze" value="Telecomunicazioni" id="Comp_Telecomunicazioni" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="Telecomunicazioni" id="Comp_Telecomunicazioni" >
           <br>
           <label for="Competenze" class="form-check-label">Idraulico</label>
-          <input type="checkbox" name="Competenze" value="Idraulico" id="Comp_Idraulico" >
+          <input class="disabilitabile" type="checkbox" name="Competenze" value="Idraulico" id="Comp_Idraulico" >
           <br>
 
         </div>
 
 
     </div>
+    </form>
 
 
     <div class="Bottoni-update">
-      <a href="#" class="btn btn-lg btn-danger bottone-login">Modifica</a>
-      <a href="#" class="btn btn-lg btn-danger bottone-login">Salva</a>
+      <button type="button" class="btn btn-lg btn-danger bottone-login trigger" name="modifica">Modifica</button>
+      <button type="submit" class="btn btn-lg btn-danger bottone-login disabilitabile" name="salva">Salva</button>
     </div>
 
 

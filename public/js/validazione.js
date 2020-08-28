@@ -1,5 +1,5 @@
 $().ready(function() {
-  $("#reg_form").validate({
+  $("#form").validate({
     rules: {
       nome: "required",
       cognome: "required",
@@ -28,7 +28,7 @@ $().ready(function() {
     },
     errorPlacement: function(error, element) {
       if (element.attr("name") == "comitato") {
-        error.insertAfter($("#err"));
+        error.insertAfter($("#comitatoErr"));
       }else{
         error.insertAfter(element);
       }
