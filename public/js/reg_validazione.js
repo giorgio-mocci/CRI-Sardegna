@@ -26,12 +26,9 @@ $().ready(function() {
       termini_condizioni: "required",
       comitato: "required"
     },
-    groups: {
-      comitato: "gruppo"
-    },
     errorPlacement: function(error, element) {
       if (element.attr("name") == "comitato") {
-        error.insertAfter($("h5"));
+        error.insertAfter($("#err"));
       }else{
         error.insertAfter(element);
       }
