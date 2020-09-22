@@ -10,8 +10,6 @@
   <!-- font importati -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
   <link rel="icon" href="img/logo.png">
-  <!-- import delle icone tipo chiave, lucchetto...-->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <!-- Bootstrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -63,37 +61,37 @@
       <div class="Profilo">
         <h5>Volontario</h5>
       </div>
-      <h5 style = "color : red;">Nome Volontario</h5>
-      <h5 style = "color : red;">Comitato di "..."</h5>
-      <a href="aggiorna-profilo" style = "color:black; "> <h5>Modifica Profilo</h5> </a>
-      <a href="aggiorna-disponibilita" style = "color:black; ">   <h5>Aggiorna disponibilità</h5> </a>
-      <a href="aggiorna-competenze" style = "color:black; "> <h5>Aggiorna competenze</h5> </a>
+      <h5 class="red">Nome Volontario</h5>
+      <h5 class="red">Comitato di "..."</h5>
+      <a href="aggiorna-profilo" class="black"> <h5>Modifica Profilo</h5> </a>
+      <a href="aggiorna-disponibilita" class="black">   <h5>Aggiorna disponibilità</h5> </a>
+      <a href="aggiorna-competenze" class="black"> <h5>Aggiorna competenze</h5> </a>
       <br>
       <div class="Profilo">
         <h5>Solo per responsabili</h5>
       </div>
-      <a href="#" style = "color:black; "> <h5>Aggiorna inventario comitato</h5> </a>
+      <a href="#" class="black"> <h5>Aggiorna inventario comitato</h5> </a>
 
-      <a href="#" style = "color:black; "> <h5>Abilita volontari nel tuo comitato</h5> </a>
-      <a href="#" style = "color:black; "> <h5>Promuovi volontari</h5> </a>
+      <a href="#" class="black"> <h5>Abilita volontari nel tuo comitato</h5> </a>
+      <a href="#" class="black"> <h5>Promuovi volontari</h5> </a>
       <div class="Profilo">
         <h5>Solo per DRAE</h5>
       </div>
-      <a href="#" style = "color:black; "> <h5>Ricerca volontari</h5> </a>
-      <a href="#" style = "color:black; "> <h5>Ricerca mezzi e attrezzature </h5> </a>
-      <a href="#" style = "color:black; "> <h5>Crea o gestisci eventi </h5> </a>
+      <a href="#" class="black"> <h5>Ricerca volontari</h5> </a>
+      <a href="#" class="black"> <h5>Ricerca mezzi e attrezzature </h5> </a>
+      <a href="#" class="black"> <h5>Crea o gestisci eventi </h5> </a>
 
 
 
-      <div class="Spazio" style = "background-color:#EEEEEE;" >
+      <div class="Spazio" class="white" >
         <br><br>
       </div>
 
       <div class="Profilo">
-        <h5 style = "text-align : center;">I volontari presenti nella regione :</h5>
+        <h5 class="centred">I volontari presenti nella regione :</h5>
       </div>
       <div class="container-map">
-        <div id="map" style="width:23vw;height:100vh; max-height: 700px;"></div>
+        <div id="map" tyle="width:23vw;height:100vh; max-height: 700px;"></div>
       </div>
 
       <br><br>
@@ -102,7 +100,7 @@
 
   <div class="Lato-Destro">
     <div class="Profilo">
-      <h5 style = "text-align : center;">Le tue competenze :</h5>
+      <h5 class="centred">Le tue competenze :</h5>
     </div>
 
 
@@ -187,12 +185,12 @@
 
     </div>
 
-    <div class="Spazio" style = "background-color:#EEEEEE;" >
+    <div class="Spazio" class="white" >
       <br><br><br><br><br><br>
     </div>
 
     <div class="Profilo">
-      <h5 style = "text-align : center;">Le tue disponibilità :</h5>
+      <h5 class="centred">Le tue disponibilità :</h5>
     </div>
     <br>
     <h6>Ovviamente, come per la cartina, è solo un placeholder, andrà implementato con js, collegato al database e reso dinamico</h6>
@@ -201,12 +199,12 @@
 
     <br>
 
-    <div class="Spazio" style = "background-color:#EEEEEE;" >
+    <div class="Spazio" class="centred" >
       <br><br><br><br><br><br>
     </div>
 
     <div class="Profilo">
-      <h5 style = "text-align : center;">Eventi attivi: :</h5>
+      <h5 class="centred">Eventi attivi: :</h5>
     </div>
     <br>
     <h4>Al momento non è presente nessun evento attivo nella tua zona.</h4>

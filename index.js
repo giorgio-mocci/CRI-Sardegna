@@ -55,6 +55,11 @@ app.get("/aggiorna-profilo", function(req,res){
   res.render("aggiorna-profilo");
 });
 
+app.post("/pre-autorizzazione", function(req,res){
+  /*fai cose con il db */
+  res.render("pre-autorizzazione");
+});
+
 
 app.listen(process.env.PORT || 3000,function(){
   console.log("server started on port 3000");
