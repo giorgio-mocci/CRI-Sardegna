@@ -18,7 +18,7 @@ se lo starti con nodemon ti basterà solo ricaricare la pagina, senza dover sopp
 
 dopodichè (devi aver installato in locale postgre) ti consiglio di creare un nuovo database ed eseguire con postgre lo script .sql che ti crea tutte le tabelle
 
-come ultima cosa dovresti creare un file che finisca in .env e metterci dentro:
+come ultima cosa dovresti creare un file chiamato .env e metterci dentro:
 LOCAL_DB=postgresql://dbuser:secretpassword@database.server.com:port/mydb
 
 puoi metterci dati sensibili dentro env(tipo le api keys), e poi richiamarli come variabile d ambiente in node

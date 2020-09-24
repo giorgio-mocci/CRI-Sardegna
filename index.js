@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const { Pool } = require('pg');
+require('dotenv').config();
 
 const app = express();
 
@@ -10,13 +11,10 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-/* prova credenziali di ambiente online, se null prova le credenziali in locale:
-postgresql://dbuser:secretpassword@database.server.com:3211/mydb
-*/
 let connection=process.env.DATABASE_URL;
 
 if(!connection){
-  connection="postgresql://michele:mettipassqui@localhost:5432/cri";
+  connection=process.env.LOCAL_DB;
 }
 
 pool = new Pool({
