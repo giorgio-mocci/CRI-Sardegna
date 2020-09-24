@@ -1,0 +1,35 @@
+fare queste cose ti può aiutare a settare il tuo environment e iniziare a lavorare
+avrai bisogno di:
+postgre
+node.js
+heroku cli
+npm (in teoria dovrebbe essere gia con node, ma non si sa mai)
+git (non indispensabile ma consigliato)
+
+una volta clonato il repository da terminale (con radice nella cartella del progetto) scrivi:
+npm install
+(installa tutti i moduli utili al funzionamento del server)
+in piu ti consiglio di scrivere:
+npm install -g nodemon
+
+con nodemon puoi startare il server in locale (nodemon index.js).
+la differenza dello startarlo con node sta che con node se starti il server e poi fai una modifica a un file per vedere la modifica dovrai ricaricare la pagina e riavviare il server (fidati che è frustrante se modifichi-controlli-modifichi-controlli...)
+se lo starti con nodemon ti basterà solo ricaricare la pagina, senza dover sopprimere il server
+
+dopodichè (devi aver installato in locale postgre) ti consiglio di creare un nuovo database ed eseguire con postgre lo script .sql che ti crea tutte le tabelle
+
+come ultima cosa dovresti creare un file che finisca in .env e metterci dentro:
+LOCAL_DB=postgresql://dbuser:secretpassword@database.server.com:port/mydb
+
+puoi metterci dati sensibili dentro env(tipo le api keys), e poi richiamarli come variabile d ambiente in node
+tranquillo nel gitignore ho fatto in modo che se carichi qualcosa con git su github il file env non viene caricato
+così entrambi avremo il nostro file con le nostre credenziali personali
+(sta cosa serve perché se metti robe sensibili su github in tempo 0 te le hanno sgamate, quindi così su github ci sara solo la var d ambiente, una volta scaricato il progetto sulle nostre macchine e con i nostri file env le variabili di ambiente assumeranno un valore una volta iniziata l esecuzione)
+
+in ultima istanza con heroku cli potrai caricare o scaricare robe dal server che stiamo usando
+ti chiedo di fare modifiche in locale, una volta testate metterle su github e poi su heroku, così che entrambi i repository rimangano al passo (guarda la documentazione di heroku per fare cio)
+tramite heroku potrai anche "conversare" con il db remoto (guarda documentazione heroku postgre)
+anche qui ti chiedo: se fai una modifica strutturale al db: prima nel tuo db locale, testa, poi aggiorna il file scriptdb.sql, metti su github e poi sul db remoto
+
+dovrebbe essere tutto! good work e finiamo sto sito
+

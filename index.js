@@ -11,11 +11,12 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 /* prova credenziali di ambiente online, se null prova le credenziali in locale:
-postgresql://dbuser:secretpassword@database.server.com:3211/mydb*/
+postgresql://dbuser:secretpassword@database.server.com:3211/mydb
+*/
 let connection=process.env.DATABASE_URL;
 
 if(!connection){
-  connection="postgresql://michele:mettipassqui@localhost:5432/michele";
+  connection="postgresql://michele:mettipassqui@localhost:5432/cri";
 }
 
 pool = new Pool({
