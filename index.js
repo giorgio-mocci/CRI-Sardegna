@@ -1,8 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
-const { Pool } = require('pg');
 require('dotenv').config();
+const db = require("./db/prepare.js");
 
 const app = express();
 
@@ -11,25 +11,14 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-let connection=process.env.DATABASE_URL;
 
-if(!connection){
-  connection=process.env.LOCAL_DB;
-}
-
-pool = new Pool({
-    connectionString: connection,
-    ssl: {
-      rejectUnauthorized: false
-    }
-  });
-
-  pool.on('error', (err, client) => {
-  console.error('Unexpected error on idle client', err);
-  process.exit(-1);
+db.query('SELECT * from comitati', (err, res) => {
+  if (err) {
+    console.log(err.stack)
+  } else {
+    console.log(res.rows[0])
+  }
 })
-
-pool.connect();
 
 app.get("/",function(req,res){
   res.render("index");
