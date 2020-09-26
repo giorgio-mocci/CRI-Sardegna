@@ -24,6 +24,11 @@ pool = new Pool({
     }
   });
 
+  pool.on('error', (err, client) => {
+  console.error('Unexpected error on idle client', err);
+  process.exit(-1);
+})
+
 pool.connect();
 
 app.get("/",function(req,res){
@@ -60,6 +65,11 @@ app.post("/pre-autorizzazione", function(req,res){
 });
 
 
-app.listen(process.env.PORT || 3000,function(){
+const server = app.listen(process.env.PORT || 3000,function(){
   console.log("server started on port 3000");
+});
+
+server.on('close', function(){
+  console.log("server closer");
+  /*chiudi connessione con pool.end*/
 });
