@@ -27,16 +27,17 @@ module.exports = (passport, db) => {
   }));
 
   passport.serializeUser((user, done) => {
-    done(null, user.cf); /*put unique id in cookie*/
+    done(null, user.cf); /*put unique id in the sid row*/
   })
 
   passport.deserializeUser((id, cb) => {
-    db.query('SELECT cf, mail FROM volontari WHERE cf = $1', [id], (err, results) => {
+    db.query('SELECT * FROM volontari WHERE cf = $1', [id], (err, results) => {
       if (err) {
         console.log('Error when selecting user on session deserialize', err);
         return cb(err);
       }
-      cb(null, results.rows[0]);
+      console.log(results.rows[0]);
+      cb(null, results.rows[0]); /*return the volunteer found with the unique id near sid*/
     })
   })
 }
