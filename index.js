@@ -18,7 +18,7 @@ app.use(session({
   httpOnly: true,
   /*secure: true,*/
 
-  secret: "string",
+  secret: "string", /*must be changed with an env var*/
   resave: false,
   saveUninitialized: false
 }));
